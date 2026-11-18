@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>周妍希写真原始摄影素材-拍摄参数与选片指南</title>
+<meta name="description" content="周妍希写真原始摄影素材整理站：按拍摄日期、机位与光比归档原始文件，讲清RAW与JPG的差别、选片标准、后期流程和授权边界，附拍摄参数表与常见问题答疑。">
+<meta name="keywords" content="周妍希写真原始摄影素材">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b3a4a'/%3E%3Ccircle cx='26' cy='28' r='12' fill='none' stroke='%23e8b86d' stroke-width='3'/%3E%3Ccircle cx='26' cy='28' r='4' fill='%23e8b86d'/%3E%3Cpath d='M40 20l14 24H26' fill='none' stroke='%23f2ede4' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1f2933;
+  --ink-2:#3e4c59;
+  --muted:#6b7785;
+  --line:#dfe3e8;
+  --bg:#fbf9f5;
+  --card:#ffffff;
+  --brass:#a97b2f;
+  --brass-soft:#f3e6cf;
+  --teal:#2f6f6a;
+  --teal-soft:#e2efed;
+  --warn:#8c3d2f;
+  --radius:10px;
+  --shadow:0 1px 2px rgba(31,41,51,.06),0 6px 18px rgba(31,41,51,.06);
+  --sp-1:6px;--sp-2:10px;--sp-3:16px;--sp-4:24px;--sp-5:36px;--sp-6:56px;
+  --fs-xs:12px;--fs-s:14px;--fs-m:16px;--fs-l:19px;--fs-xl:24px;--fs-2xl:32px;
+  --anchor-offset:104px;
+  --font:"Noto Serif SC","Songti SC",Georgia,"Microsoft YaHei",serif;
+  --font-ui:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--font-ui);font-size:var(--fs-m);line-height:1.8;
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;display:block}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--brass);outline-offset:2px;border-radius:4px}
+section[id],div[id].anchor-target{scroll-margin-top:var(--anchor-offset)}
+h1,h2,h3{font-family:var(--font);line-height:1.35;margin:0}
+h2{font-size:var(--fs-xl);letter-spacing:.5px}
+h3{font-size:var(--fs-l)}
+p{margin:0 0 var(--sp-3)}
+.wrap{width:min(1160px,100% - 32px);margin-inline:auto}
+.small{font-size:var(--fs-s);color:var(--muted)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:var(--fs-xs)}
+
+/* ---------- 吸顶公告条 + 页头 ---------- */
+.sticky-stack{position:sticky;top:0;z-index:60}
+.notice{
+  background:var(--ink);color:#f5f1e8;font-size:var(--fs-s);
+  border-bottom:1px solid #0f151b;
+}
+.notice .wrap{display:flex;gap:var(--sp-2);align-items:center;padding:8px 0;flex-wrap:wrap}
+.notice b{color:#f0c27b;font-weight:600}
+.notice .dot{width:6px;height:6px;border-radius:50%;background:#f0c27b;flex:none}
+.site-head{background:rgba(251,249,245,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.head-inner{display:flex;align-items:center;gap:var(--sp-3);padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font);font-size:18px;color:var(--ink);font-weight:700;white-space:nowrap}
+.brand:hover{text-decoration:none}
+.brand-mark{width:34px;height:34px;flex:none}
+.top-nav{margin-left:auto;display:flex;gap:var(--sp-2);align-items:center;flex-wrap:wrap}
+.top-nav a{color:var(--ink-2);font-size:var(--fs-s);padding:6px 8px;border-radius:6px}
+.top-nav a:hover{background:var(--brass-soft);text-decoration:none}
+.menu-btn{
+  display:none;margin-left:auto;background:var(--card);border:1px solid var(--line);
+  border-radius:8px;padding:8px 12px;font-size:var(--fs-s);color:var(--ink-2);cursor:pointer;
+}
+.search-box{display:flex;align-items:center;gap:0;border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}
+.search-box input{border:0;padding:7px 10px;font-size:var(--fs-s);width:168px;font-family:var(--font-ui);outline:none;background:transparent}
+.search-box button{border:0;background:var(--teal);color:#fff;padding:8px 12px;font-size:var(--fs-s);cursor:pointer;font-family:var(--font-ui)}
+.search-result{
+  display:none;border-top:1px dashed var(--line);background:#fffdf8;
+}
+.search-result.open{display:block}
+.search-result .wrap{padding:8px 0 12px;font-size:var(--fs-s)}
+.search-result ul{margin:6px 0 0;padding-left:18px}
+
+/* ---------- 首屏 ---------- */
+.hero{padding:var(--sp-6) 0 var(--sp-5);border-bottom:1px solid var(--line);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:var(--sp-5);align-items:center}
+.eyebrow{display:inline-block;font-size:var(--fs-xs);letter-spacing:2px;color:var(--brass);border:1px solid var(--brass);border-radius:999px;padding:3px 12px;margin-bottom:var(--sp-3)}
+.hero h1{font-size:clamp(28px,4.4vw,44px);letter-spacing:1px}
+.hero-lead{font-size:var(--fs-l);color:var(--ink-2);max-width:36em;margin-top:var(--sp-3)}
+.hero-actions{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-4)}
+.btn{display:inline-block;padding:10px 20px;border-radius:999px;font-size:var(--fs-s);border:1px solid transparent}
+.btn:hover{text-decoration:none}
+.btn-primary{background:var(--ink);color:#f7f3ea}
+.btn-primary:hover{background:#0f151b}
+.btn-ghost{border-color:var(--ink-2);color:var(--ink-2)}
+.btn-ghost:hover{background:var(--brass-soft)}
+.hero-stats{display:flex;gap:var(--sp-4);margin-top:var(--sp-5);flex-wrap:wrap}
+.hero-stats div{min-width:96px}
+.hero-stats b{display:block;font-family:var(--font);font-size:var(--fs-xl);color:var(--teal);line-height:1.2}
+.hero-stats span{font-size:var(--fs-xs);color:var(--muted)}
+.hero-visual{position:relative;aspect-ratio:4/3.4}
+.hero-visual svg{width:100%;height:100%}
+
+/* ---------- 主内容 ---------- */
+.main{padding:var(--sp-5) 0 var(--sp-6)}
+.section{padding:var(--sp-5) 0;border-bottom:1px solid var(--line)}
+.section:last-child{border-bottom:0}
+.sec-head{display:flex;align-items:baseline;gap:var(--sp-3);flex-wrap:wrap;margin-bottom:var(--sp-4)}
+.sec-head .kicker{font-size:var(--fs-xs);color:var(--brass);letter-spacing:2px}
+.sec-head p{margin:0;color:var(--muted);font-size:var(--fs-s);max-width:52em}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-3)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3)}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:var(--sp-3);box-shadow:var(--shadow);
+}
+.card h3{font-size:var(--fs-m);margin-bottom:var(--sp-1)}
+.card p{font-size:var(--fs-s);margin-bottom:0;color:var(--ink-2)}
+.card .meta{font-size:var(--fs-xs);color:var(--muted);margin-top:var(--sp-2);display:block}
+.card a{font-weight:600}
+
+/* 紧凑列表 */
+.tight-list{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);overflow:hidden}
+.tight-list li{display:flex;gap:var(--sp-3);padding:12px var(--sp-3);border-bottom:1px solid var(--line);font-size:var(--fs-s);align-items:baseline}
+.tight-list li:last-child{border-bottom:0}
+.tight-list time{flex:none;width:86px;color:var(--brass);font-family:ui-monospace,monospace;font-size:var(--fs-xs)}
+.tight-list span{color:var(--ink-2)}
+
+/* 标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:8px}
+.tag-index a{
+  font-size:var(--fs-s);border:1px solid var(--line);background:#fff;border-radius:999px;
+  padding:6px 14px;color:var(--ink-2);
+}
+.tag-index a:hover{border-color:var(--brass);background:var(--brass-soft);text-decoration:none}
+
+/* 深度解析 */
+.analysis{display:grid;grid-template-columns:2.1fr .9fr;gap:var(--sp-5);align-items:start}
+.analysis .body p{font-size:var(--fs-m);line-height:1.95;color:var(--ink-2)}
+.analysis .body h3{margin:var(--sp-4) 0 var(--sp-2);color:var(--ink)}
+.analysis .body h3:first-child{margin-top:0}
+.side-note{position:sticky;top:calc(var(--anchor-offset) + 12px);background:var(--card);border:1px solid var(--line);border-left:4px solid var(--brass);border-radius:var(--radius);padding:var(--sp-3);font-size:var(--fs-s)}
+.side-note h3{font-size:var(--fs-s);color:var(--brass);letter-spacing:1px;margin-bottom:var(--sp-2)}
+.side-note ul{margin:0;padding-left:18px;color:var(--ink-2)}
+.side-note li{margin-bottom:6px}
+.data-table{width:100%;border-collapse:collapse;font-size:var(--fs-s);margin:var(--sp-3) 0}
+.data-table th,.data-table td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+.data-table th{background:#f4f1ea;font-weight:600}
+.data-table caption{caption-side:top;text-align:left;font-size:var(--fs-xs);color:var(--muted);padding-bottom:6px}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card)}
+.compare > div{padding:var(--sp-3)}
+.compare > div + div{border-left:1px solid var(--line)}
+.compare h3{font-size:var(--fs-s);letter-spacing:1px;margin-bottom:var(--sp-2)}
+.compare .col-a{background:#fdfaf3}
+.compare .col-a h3{color:var(--warn)}
+.compare .col-b{background:#f3f8f7}
+.compare .col-b h3{color:var(--teal)}
+.compare ul{margin:0;padding-left:18px;font-size:var(--fs-s);color:var(--ink-2)}
+.compare li{margin-bottom:6px}
+
+/* 步骤 */
+.steps{counter-reset:step;list-style:none;margin:0;padding:0;display:grid;gap:var(--sp-3)}
+.steps li{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-3) var(--sp-3) var(--sp-3) 64px;font-size:var(--fs-s)}
+.steps li::before{
+  counter-increment:step;content:counter(step,decimal-leading-zero);
+  position:absolute;left:16px;top:14px;width:34px;height:34px;border-radius:50%;
+  background:var(--teal-soft);color:var(--teal);font-family:var(--font);font-weight:700;
+  display:grid;place-items:center;font-size:var(--fs-s);
+}
+.steps b{display:block;color:var(--ink);font-size:var(--fs-m);margin-bottom:2px}
+
+/* FAQ */
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:0;margin-bottom:var(--sp-2);overflow:hidden}
+details summary{cursor:pointer;padding:13px var(--sp-3);font-size:var(--fs-m);font-weight:600;color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"＋";color:var(--brass);font-weight:400;flex:none}
+details[open] summary::after{content:"－"}
+details .ans{padding:0 var(--sp-3) var(--sp-3);font-size:var(--fs-s);color:var(--ink-2)}
+
+/* 评论 */
+.voices{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-3)}
+.voice{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-3);font-size:var(--fs-s)}
+.voice .who{font-size:var(--fs-xs);color:var(--muted);display:flex;gap:8px;align-items:center;margin-bottom:6px}
+.voice .avatar{width:26px;height:26px;border-radius:50%;background:var(--brass-soft);color:var(--brass);display:grid;place-items:center;font-weight:700;font-size:var(--fs-xs);flex:none}
+.voice p{margin:0;color:var(--ink-2)}
+.voice .rate{color:var(--brass);letter-spacing:2px;font-size:var(--fs-xs)}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3)}
+
+/* 榜单 */
+.rank{list-style:none;margin:0;padding:0;counter-reset:rank}
+.rank li{display:grid;grid-template-columns:44px 1fr auto;gap:var(--sp-3);align-items:center;padding:12px var(--sp-3);border-bottom:1px solid var(--line);font-size:var(--fs-s)}
+.rank li:last-child{border-bottom:0}
+.rank li::before{counter-increment:rank;content:counter(rank);font-family:var(--font);font-size:var(--fs-l);color:var(--brass);text-align:center}
+.rank .val{font-family:ui-monospace,monospace;font-size:var(--fs-xs);color:var(--teal);white-space:nowrap}
+
+/* 时间线 */
+.timeline{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--brass-soft)}
+.timeline li{position:relative;padding:0 0 var(--sp-3) var(--sp-3);font-size:var(--fs-s)}
+.timeline li::before{content:"";position:absolute;left:-29px;top:8px;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--brass)}
+.timeline time{display:block;font-family:ui-monospace,monospace;font-size:var(--fs-xs);color:var(--brass)}
+
+/* 图片卡 */
+.shot{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.shot img{width:100%;height:190px;object-fit:cover}
+.shot .cap{padding:var(--sp-2) var(--sp-3) var(--sp-3);font-size:var(--fs-s)}
+.shot .cap b{display:block;font-size:var(--fs-m);margin-bottom:2px}
+.shot .cap span{color:var(--muted);font-size:var(--fs-xs)}
+
+/* 页尾 */
+.site-foot{background:var(--ink);color:#cfd6dd;padding:var(--sp-6) 0 var(--sp-4);font-size:var(--fs-s)}
+.site-foot a{color:#e8dcc4}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:var(--sp-4)}
+.foot-brand{display:flex;align-items:center;gap:10px;color:#f7f3ea;font-family:var(--font);font-size:18px;font-weight:700;margin-bottom:var(--sp-2)}
+.site-foot h3{font-size:var(--fs-s);color:#f0c27b;letter-spacing:1px;margin-bottom:var(--sp-2);font-family:var(--font-ui)}
+.site-foot ul{list-style:none;margin:0;padding:0}
+.site-foot li{margin-bottom:6px}
+.site-foot .foot-note{border-top:1px solid #3a4652;margin-top:var(--sp-4);padding-top:var(--sp-3);color:#93a1ae;font-size:var(--fs-xs);line-height:1.9}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;z-index:70;
+  background:var(--ink);color:#f7f3ea;border:0;border-radius:50%;
+  width:46px;height:46px;font-size:var(--fs-s);cursor:pointer;display:none;
+  box-shadow:var(--shadow);
+}
+.to-top.show{display:block}
+.to-top:hover{transform:translateY(-3px)}
+
+/* 响应式 */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:var(--sp-4)}
+  .hero-visual{max-width:520px}
+  .analysis{grid-template-columns:1fr}
+  .side-note{position:static}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .top-nav{display:none;width:100%;order:5;padding-top:8px;border-top:1px dashed var(--line);margin-left:0}
+  .top-nav.open{display:flex}
+  .menu-btn{display:inline-block}
+  .search-box{margin-left:0}
+  .head-inner{flex-wrap:wrap}
+}
+@media (max-width:640px){
+  .grid-3,.grid-2,.voices,.news-grid,.compare{grid-template-columns:1fr}
+  .compare > div + div{border-left:0;border-top:1px solid var(--line)}
+  .foot-grid{grid-template-columns:1fr}
+  .search-box input{width:130px}
+  .rank li{grid-template-columns:32px 1fr;grid-auto-rows:auto}
+  .rank .val{grid-column:2}
+  .tight-list li{flex-wrap:wrap;gap:4px}
+  .tight-list time{width:auto}
+  .to-top{width:42px;height:42px;right:12px;bottom:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-stack">
+  <div class="notice" id="announce">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <span><b>更新</b> 2026-11-06 归档：10 月 28 日外景 416 张 RAW 已按机位分组，新增镜头参数表</span>
+      <span class="small" style="color:#a9b6c2">｜11 月 3 日补录授权说明一份</span>
+    </div>
+  </div>
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a class="brand" href="/#top" aria-label="回到首页顶部">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#2b3a4a"/>
+          <circle cx="25" cy="27" r="11" fill="none" stroke="#e8b86d" stroke-width="3"/>
+          <circle cx="25" cy="27" r="3.6" fill="#e8b86d"/>
+          <path d="M39 19l13 22H26" fill="none" stroke="#f2ede4" stroke-width="3" stroke-linejoin="round"/>
+        </svg>
+        <span>周妍希写真原始摄影素材</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="topNav">频道菜单</button>
+      <nav class="top-nav" id="topNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#analysis">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+      </nav>
+      <form class="search-box" id="searchForm" role="search">
+        <label for="q" class="small" style="position:absolute;left:-9999px">站内搜索</label>
+        <input id="q" name="q" type="search" placeholder="搜素材名 / 场景 / 日期" autocomplete="off">
+        <button type="submit">查找</button>
+      </form>
+    </div>
+    <div class="search-result" id="searchResult" aria-live="polite">
+      <div class="wrap" id="searchOut"></div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <!-- 首屏 -->
+  <section class="hero" id="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">RAW 归档 · 拍摄参数 · 选片逻辑</span>
+        <h1>周妍希写真原始摄影素材</h1>
+        <p class="hero-lead">按拍摄日、机位和光比整理的原始文件目录，记录了 2026 年 10 月 28 日、11 月 1 日两场拍摄的 1,072 个 RAW 与 213 张 JPG，附镜头焦段、快门、ISO 与选片意见。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/#latest">查看本次归档清单</a>
+          <a class="btn btn-ghost" href="/#analysis">读拍摄参数对比</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>1,072</b><span>RAW 原始文件</span></div>
+          <div><b>213</b><span>直出 JPG</span></div>
+          <div><b>4</b><span>拍摄机位</span></div>
+          <div><b>36</b><span>选片入册</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg viewBox="0 0 400 340" role="img" aria-label="相机取景框与光比示意构图">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e9dfc9"/>
+              <stop offset="1" stop-color="#c9b28a"/>
+            </linearGradient>
+          </defs>
+          <rect x="8" y="8" width="384" height="324" rx="16" fill="#f4efe4" stroke="#d8cfbd" stroke-width="2"/>
+          <rect x="44" y="58" width="200" height="224" rx="8" fill="#1f2933"/>
+          <rect x="58" y="72" width="172" height="196" rx="4" fill="url(#g1)"/>
+          <path d="M58 72h172v196H58z" fill="none" stroke="#0f151b" stroke-width="0"/>
+          <line x1="58" y1="268" x2="230" y2="268" stroke="#2b3a4a" stroke-width="1" stroke-dasharray="4 5"/>
+          <line x1="128" y1="72" x2="128" y2="268" stroke="#2b3a4a" stroke-width="1" stroke-dasharray="4 5"/>
+          <line x1="160" y1="72" x2="160" y2="268" stroke="#2b3a4a" stroke-width="1" stroke-dasharray="4 5"/>
+          <circle cx="160" cy="140" r="26" fill="none" stroke="#a97b2f" stroke-width="2"/>
+          <rect x="264" y="86" width="96" height="18" rx="9" fill="#2f6f6a" opacity=".85"/>
+          <rect x="264" y="118" width="72" height="12" rx="6" fill="#a97b2f" opacity=".7"/>
+          <rect x="264" y="142" width="86" height="12" rx="6" fill="#c9b28a"/>
+          <rect x="264" y="166" width="60" height="12" rx="6" fill="#c9b28a"/>
+          <rect x="264" y="200" width="96" height="60" rx="8" fill="#fff" stroke="#d8cfbd"/>
+          <text x="276" y="226" font-size="13" fill="#2b3a4a" font-family="monospace">ISO 200</text>
+          <text x="276" y="248" font-size="13" fill="#2b3a4a" font-family="monospace">f/2.0 1/250</text>
+          <circle cx="300" cy="296" r="14" fill="#a97b2f"/>
+          <circle cx="300" cy="296" r="6" fill="#f4efe4"/>
+          <rect x="80" y="288" width="120" height="8" rx="4" fill="#c9b28a"/>
+          <rect x="80" y="304" width="86" height="8" rx="4" fill="#dfd5c1"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="main">
+    <div class="wrap">
+
+      <!-- 领域概览 -->
+      <section class="section" id="overview">
+        <div class="sec-head">
+          <span class="kicker">01</span>
+          <h2>领域概览：原始素材是什么级别的文件</h2>
+          <p>摄影素材按用途分三层，弄清层级再谈选片。</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>RAW 原始文件</h3>
+            <p>佳能 EOS R6 Mark II 机内生成 .CR3，每张约 48MB，保留 14bit 色彩深度与完整动态范围。白平衡、色调曲线均可无损回退。</p>
+            <span class="meta">本次归档 1,072 个，占 51.4GB</span>
+          </div>
+          <div class="card">
+            <h3>直出 JPG 预览</h3>
+            <p>相机内 JPEG 质量设为 L 级，用于现场快速判断焦点与构图偏差。10 月 28 日外景保留 213 张，随 RAW 一同存档。</p>
+            <span class="meta">长边 5472px · sRGB · 每张约 11MB</span>
+          </div>
+          <div class="card">
+            <h3>成片与修图 PSD</h3>
+            <p>选片后进入修图的有 36 张，分层 PSD 与 Lightroom 目录文件单独存放，含像素级修复记录与色彩查找表版本号。</p>
+            <span class="meta">修图轮次 3 轮 · 最后修订 2026-11-04</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精选推荐（图片卡） -->
+      <section class="section" id="picks">
+        <div class="sec-head">
+          <span class="kicker">02</span>
+          <h2>精选内容推荐：四组可单独取用的素材集</h2>
+          <p>按场景与光位拆分，每组文件数与选片率都已核对。</p>
+        </div>
+        <div class="grid-3">
+          <article class="shot">
+            <img src="https://picsum.photos/seed/yanxi-oct-wall/640/380" width="640" height="380" loading="lazy" alt="灰砖墙前侧逆光半身取景，人物左肩对光">
+            <div class="cap">
+              <b>灰砖墙侧逆光组</b>
+              <span>10-28 · 148 张 · 入册 9 张 · f/1.8 1/400</span>
+              <p class="small" style="margin:6px 0 0">墙面反射光均匀，脸部明暗差约 1.7 档，适合保留高光发丝细节。</p>
+            </div>
+          </article>
+          <article class="shot">
+            <img src="https://picsum.photos/seed/yanxi-cafe-window/640/380" width="640" height="380" loading="lazy" alt="咖啡馆落地窗前的低机位坐姿特写，窗光为唯一光源">
+            <div class="cap">
+              <b>咖啡馆窗光低位组</b>
+              <span>11-01 · 192 张 · 入册 11 张 · f/2.0 1/250</span>
+              <p class="small" style="margin:6px 0 0">窗光单光源，色温 5300K 左右，ISO 控制到 640 以内噪点可接受。</p>
+            </div>
+          </article>
+          <article class="shot">
+            <img src="https://picsum.photos/seed/yanxi-night-street/640/380" width="640" height="380" loading="lazy" alt="夜间街道霓虹侧光全身走位，背景虚化为彩色光斑">
+            <div class="cap">
+              <b>夜街霓虹混光组</b>
+              <span>11-01 · 96 张 · 入册 5 张 · f/1.4 1/125 ISO 1600</span>
+              <p class="small" style="margin:6px 0 0">钠灯与 LED 混光，镁光灯补了 1/8 输出，肤色校正需分区域处理。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="section" id="latest">
+        <div class="sec-head">
+          <span class="kicker">03</span>
+          <h2>最新更新：目录与文件的变动记录</h2>
+          <p>只记录文件层面的增删改，不含评价。</p>
+        </div>
+        <ul class="tight-list">
+          <li><time>2026-11-06</time><span>外景 416 张 RAW 按机位拆成 4 个子目录，文件夹命名统一为「日期-机位-场景」。</span></li>
+          <li><time>2026-11-05</time><span>补充 11 月 1 日咖啡馆场景的镜头上机记录，35mm 与 85mm 各占多少张已统计。</span></li>
+          <li><time>2026-11-04</time><span>修图第 3 轮完成，36 张成片 PSD 更新至 v3，皮肤修补层单独标记。</span></li>
+          <li><time>2026-11-03</time><span>加入授权说明文件一份，写明本次拍摄的肖像使用范围与期限。</span></li>
+          <li><time>2026-11-02</time><span>删除 27 张连续失焦帧，保留对照样本 3 张，避免误删判定标准无依据。</span></li>
+          <li><time>2026-10-30</time><span>夜街霓虹组重命名，去掉原先按序号排列的方式，改为按拍摄时间戳排序。</span></li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="section" id="channels">
+        <div class="sec-head">
+          <span class="kicker">04</span>
+          <h2>分类入口：按拍摄条件找文件</h2>
+          <p>十个检索维度，点开即为对应文件清单。</p>
+        </div>
+        <nav class="tag-index" aria-label="分类入口标签">
+          <a href="/#picks">窗光人像 RAW</a>
+          <a href="/#picks">侧逆光半身</a>
+          <a href="/#picks">夜间霓虹补光</a>
+          <a href="/#guide">低机位坐姿构图</a>
+          <a href="/#analysis">85mm 中景焦段</a>
+          <a href="/#analysis">35mm 环境人像</a>
+          <a href="/#latest">连拍失焦对照组</a>
+          <a href="/#guide">白平衡偏移校正</a>
+          <a href="/#picks">灰砖墙外景</a>
+          <a href="/#latest">雨天备用室内组</a>
+          <a href="/#guide">肤色分区调整</a>
+          <a href="/#faq">二次使用授权范围</a>
+        </nav>
+      </section>
+
+      <!-- 深度解析（唯一主体阅读区） -->
+      <section class="section" id="analysis">
+        <div class="sec-head">
+          <span class="kicker">05</span>
+          <h2>深度解析：这批素材真正值得留的是哪一部分</h2>
+          <p>三个可被反驳的判断，每条都带核对线索。</p>
+        </div>
+        <div class="analysis">
+          <div class="body">
+            <h3>一、夜间霓虹组的素材价值被高估，实际可用率不到 6%</h3>
+            <p>11 月 1 日夜街拍摄共 96 张，最终入册 5 张，可用率 5.2%。同期窗光组 192 张入册 11 张，可用率 5.7%，看着接近，但代价不同：霓虹组有 41 张因混合色温导致左脸颊偏青、右侧偏橙，分区域校正后仍留下轻微色带，修图师在 PSD v2 到 v3 之间单独返工一次。</p>
+            <p>持相反看法的理由是霓虹背景的光斑无可替代。这个理由成立，但只对 5 张成立。ISO 1600 下暗部噪点在 100% 放大时可见，Lightroom 降噪参数拉到 35 才压住，细节损失换来的是背景饱和光斑。如果把同样的拍摄时间投到白天窗光，产出会更稳。判断依据：96 张中有 63 张焦点落在背景而非眼部，是自动对焦在暗部来回拉风箱的直接结果。</p>
+            <table class="data-table">
+              <caption>10-28 与 11-01 两场拍摄的关键参数对照</caption>
+              <thead><tr><th>项目</th><th>灰砖墙外景</th><th>咖啡馆窗光</th><th>夜街霓虹</th></tr></thead>
+              <tbody>
+                <tr><td>文件数</td><td>416</td><td>192</td><td>96</td></tr>
+                <tr><td>入册数</td><td>9</td><td>11</td><td>5</td></tr>
+                <tr><td>主用焦段</td><td>85mm</td><td>35mm</td><td>50mm</td></tr>
+                <tr><td>光圈 / 快门</td><td>f/1.8 1/400</td><td>f/2.0 1/250</td><td>f/1.4 1/125</td></tr>
+                <tr><td>焦点落眼率</td><td>88%</td><td>91%</td><td>34%</td></tr>
+              </tbody>
+            </table>
+
+            <h3>二、85mm 在这批素材里承担了 62% 的可用帧，不是 35mm</h3>
+            <p>把三段场景合在一起看，85mm 拍出的 664 个文件里被选入成片的有 25 张，占全部成片的 69%，其中 22 张来自灰砖墙组。35mm 一共 312 个文件，入册 8 张，集中在咖啡馆窗光的环境人像。50mm 只用在夜街，96 张入册 3 张。</p>
+            <p>有人会说 85mm 压缩感强、容易拍得好看，这话只能解释一半。另一半来自拍摄节奏：外景时摄影师在同一个位置几乎不换机位，85mm 让构图变化靠人物走动完成，连拍命中率高；35mm 换场景频繁，前 20 张对焦习惯还没建立，废片集中在这一段。核对方法很直接，按文件名排序前 20 个 35mm 文件里，有 14 张眼部不在焦平面内。</p>
+
+            <h3>三、真正需要长期保留的只有 93 个文件，不是全部 1,072 个</h3>
+            <p>这 93 个由 36 张成片、36 张成片对应的 RAW、18 张用于对比的失焦或偏色样本、3 张删除前留档组成。其余 979 个文件在 12 个月后可以清掉，前提是 PSD 与 Lightroom 目录文件完好。</p>
+            <p>反方的说法是存储便宜，全留没成本。2026 年一块 4TB 移动固态约 1,300 元，全留确实不贵，但检索成本不便宜：目录里 1,072 个文件按机位分完还有 4 层，找一张特定表情平均要点开三个子目录。压缩到 93 个后，选片目录只剩两层。这是取舍，不是定论，若后续要做花絮短片或二次调色，保留范围应扩到 200 个以上。</p>
+          </div>
+          <aside class="side-note">
+            <h3>判断拆解 · 可核对项</h3>
+            <ul>
+              <li>夜街 96 张中焦点落眼 33 张，文件名尾号为 0012 至 0044。</li>
+              <li>85mm 文件共 664 个，入册 25 张，占比 69%。</li>
+              <li>35mm 前 20 个文件中 14 张眼部失焦，可按时间戳复核。</li>
+              <li>长期保留清单 93 项：成片 36、对应 RAW 36、样本 18、留档 3。</li>
+              <li>数据来源：拍摄日志 10-28 与 11-01，修图目录 v3。</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- 体验指南（步骤 + 对照） -->
+      <section class="section" id="guide">
+        <div class="sec-head">
+          <span class="kicker">06</span>
+          <h2>体验指南：从拿到文件到完成选片的五步</h2>
+          <p>流程来自本次两场拍摄的实际操作顺序。</p>
+        </div>
+        <ol class="steps">
+          <li><b>先建目录，不先看片</b>按「日期-机位-场景-镜次」四层建好目录，把 1,072 个文件一次性导入 Lightroom，导入时同步生成 1:1 预览。这一步在 11 月 1 日晚完成，用时 46 分钟。</li>
+          <li><b>用 JPG 快筛一轮</b>213 张直出 JPG 先过一遍，标记明显失焦与闭眼帧，标掉 187 张。快筛只做减法，不做审美判断。</li>
+          <li><b>RAW 里看焦点与高光</b>按 100% 放大逐张看眼部，配合直方图判断高光是否溢出。灰砖墙组有 12 张发丝高光贴顶，靠 RAW 拉回 0.7 档。</li>
+          <li><b>分组打分，不逐张纠结</b>每组先选出 3 张候选，再从候选中挑 2 张。窗光组 192 张最后剩 11 张，用了两轮分组，比逐张挑快约 40 分钟。</li>
+          <li><b>写选片理由再交修图</b>每张入册图写一句入选原因，例如「左肩对光、发丝分离清楚」。理由不足一句的退回候选池。这是防止凭手感堆片的最有效一步。</li>
+        </ol>
+
+        <div class="compare" style="margin-top:var(--sp-4)">
+          <div class="col-a">
+            <h3>只留 JPG 的做法</h3>
+            <ul>
+              <li>文件体积小，51.4GB 可压到 2.3GB 左右</li>
+              <li>白平衡定死，色温偏差无法回退</li>
+              <li>高光溢出区域不可恢复</li>
+              <li>后期空间基本为零，仅能裁切与轻度调色</li>
+              <li>适合仅作预览与社交平台发布</li>
+            </ul>
+          </div>
+          <div class="col-b">
+            <h3>保留 RAW 的做法</h3>
+            <ul>
+              <li>单张 48MB，全量需 51.4GB</li>
+              <li>白平衡可无损重设，5300K 改 4800K 无损失</li>
+              <li>高光可拉回 1.3 档左右，发丝细节保住</li>
+              <li>支持分区域调色与降噪参数细调</li>
+              <li>适合印刷、二创与长期归档</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 榜单 -->
+      <section class="section" id="ranking">
+        <div class="sec-head">
+          <span class="kicker">07</span>
+          <h2>本次入册率排行：按场景组统计</h2>
+          <p>入册率 = 入册张数 ÷ 场景文件数，保留一位小数。</p>
+        </div>
+        <ol class="rank">
+          <li><span><a href="/#picks">咖啡馆窗光低位组</a> · 35mm 环境人像为主</span><span class="val">5.7%</span></li>
+          <li><span><a href="/#picks">夜街霓虹混光组</a> · 补光 1/8 输出</span><span class="val">5.2%</span></li>
+          <li><span><a href="/#picks">灰砖墙侧逆光组</a> · 85mm 半身</span><span class="val">2.2%</span></li>
+          <li><span><a href="/#latest">室内雨天备用组</a> · 仅试拍 38 张</span><span class="val">2.6%</span></li>
+          <li><span><a href="/#latest">连拍失焦对照组</a> · 删除前留档</span><span class="val">—</span></li>
+        </ol>
+      </section>
+
+      <!-- 时间线 -->
+      <section class="section" id="timeline">
+        <div class="sec-head">
+          <span class="kicker">08</span>
+          <h2>拍摄与归档时间线</h2>
+          <p>从第一次试拍到目录定型，共 10 天。</p>
+        </div>
+        <ul class="timeline">
+          <li><time>2026-10-28 09:20</time>灰砖墙外景开机，首轮 120 张用于确认光比，最终保留 148 张正式帧。</li>
+          <li><time>2026-10-28 15:40</time>外景转场，补拍 68 张逆光发丝特写，全部使用 85mm f/1.8。</li>
+          <li><time>2026-11-01 10:10</time>咖啡馆窗光开拍，35mm 与 85mm 交替，共 192 张。</li>
+          <li><time>2026-11-01 19:30</time>夜街霓虹段，96 张，补光灯 1/8 输出，ISO 1600。</li>
+          <li><time>2026-11-02 14:00</time>快筛删除 27 张连续失焦帧，留 3 张作对照样本。</li>
+          <li><time>2026-11-04 18:00</time>修图第 3 轮完成，36 张成片 PSD 定稿。</li>
+          <li><time>2026-11-06 11:00</time>目录改为四层结构，归档完成。</li>
+        </ul>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="section" id="news">
+        <div class="sec-head">
+          <span class="kicker">09</span>
+          <h2>相关资讯</h2>
+          <p>与拍摄、归档、授权有关的四条动态。</p>
+        </div>
+        <div class="news-grid">
+          <div class="card">
+            <h3>EOS R6 Mark II 固件 1.8.0 对连拍缓存的影响</h3>
+            <p>10 月 22 日发布的固件把 RAW 连拍缓存从 93 张提到 110 张，本次外景连拍段正好验证：148 张里没有出现写入卡顿。</p>
+            <span class="meta">2026-11-05 · 器材记录</span>
+          </div>
+          <div class="card">
+            <h3>Adobe Camera Raw 17.1 对 CR3 的降噪改进</h3>
+            <p>夜街组在 17.1 下重新处理了 5 张成片，暗部色带较 16.4 版本减弱，但细节锐度下降约 8%，需要单独锐化补偿。</p>
+            <span class="meta">2026-11-04 · 后期记录</span>
+          </div>
+          <div class="card">
+            <h3>肖像使用授权范围更新</h3>
+            <p>11 月 3 日补签的说明写明：本次素材仅限个人作品集展示，期限 24 个月，商用与二次分发需另行书面确认。</p>
+            <span class="meta">2026-11-03 · 授权文件</span>
+          </div>
+          <div class="card">
+            <h3>4TB 移动固态价格回落至 1,300 元区间</h3>
+            <p>较 9 月下降约 140 元，按本次 51.4GB 的全量归档计算，单场素材存储成本不到 17 元。</p>
+            <span class="meta">2026-11-02 · 存储成本</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="sec-head">
+          <span class="kicker">10</span>
+          <h2>常见问题</h2>
+          <p>七个在选片与归档时被反复问到的点。</p>
+        </div>
+        <details>
+          <summary>RAW 文件和直出 JPG 在本次归档里怎么对应？</summary>
+          <div class="ans">文件名主体一致，RAW 用 .CR3 后缀，JPG 用 .JPG 后缀，同名前缀可直接配对。213 张 JPG 中有 11 张没有对应 RAW，是拍摄时误设为仅 JPEG 的 11 张试拍帧，已在目录里单独标注。</div>
+        </details>
+        <details>
+          <summary>85mm 和 35mm 的选片率差这么多，是镜头问题吗？</summary>
+          <div class="ans">镜头不是主因。85mm 用在固定机位的外景，人物在焦平面附近走动，命中率高；35mm 用在换场景频繁的咖啡馆，前 20 张对焦习惯没建立起来，废片集中。若把 35mm 也放在固定机位拍满 100 张，命中率差距会缩小到 10 个百分点以内。</div>
+        </details>
+        <details>
+          <summary>夜间霓虹组为什么焦点落眼率只有 34%？</summary>
+          <div class="ans">暗部对比度低，相机自动对焦在人脸与背景光斑之间反复搜索。96 张中有 63 张焦点落在背景。补救办法是用单点对焦加眼部识别锁定，或补光提高到 1/4 输出，本次只用了 1/8。</div>
+        </details>
+        <details>
+          <summary>白平衡在 RAW 里能改到什么程度？</summary>
+          <div class="ans">色温可在 2000K 至 10000K 之间无损调整，色调 ±150 可调。夜街混光场景里，左脸颊偏青约 400K、右侧偏橙约 600K，整张调平后仍会有轻微色带，只能靠局部蒙版修正，本次用了两个径向蒙版。</div>
+        </details>
+        <details>
+          <summary>这 36 张成片能用于商业发布吗？</summary>
+          <div class="ans">不能直接商用。11 月 3 日的授权说明限定为个人作品集展示，期限 24 个月，商用与二次分发需另行书面确认。宣传物料、品牌合作、付费图库上传均不在当前范围内。</div>
+        </details>
+        <details>
+          <summary>删除的 27 张失焦帧还能找回吗？</summary>
+          <div class="ans">原始文件已删除，但保留了 3 张对照样本和删除前的文件名清单。若需复核判定标准，可依据清单与样本比对，确认删除范围是否合理。清单存放在归档根目录的 delete-log 文本文件中。</div>
+        </details>
+        <details>
+          <summary>后续要拍同款窗光，最低要什么器材条件？</summary>
+          <div class="ans">一支 35mm f/1.8 以上光圈的定焦、一块 60cm 白色反光板即可。窗光本身是唯一主光源，色温 5300K 左右，ISO 控制在 640 以内，1/250 秒能冻结日常动作。补光越少，肤色越自然，这是本次窗光组入册率最高的原因之一。</div>
+        </details>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="section" id="voices">
+        <div class="sec-head">
+          <span class="kicker">11</span>
+          <h2>用户评论</h2>
+          <p>六条来自选片会与修图协作的反馈，褒贬都有。</p>
+        </div>
+        <div class="voices">
+          <div class="voice">
+            <div class="who"><span class="avatar">林</span><span>林小满 · 修图</span><span class="rate">★★★★</span></div>
+            <p>窗光组那 11 张皮肤过渡很干净，5300K 基本不用动白平衡。但第 7 张右耳后有一小块反光板溢光，v3 里用修复画笔压了两次才自然。</p>
+          </div>
+          <div class="voice">
+            <div class="who"><span class="avatar">陈</span><span>陈以北 · 选片</span><span class="rate">★★★</span></div>
+            <p>夜街组 96 张我只挑了 3 张，剩下两张是看在高光斑的分上勉强留的。焦点落眼率 34% 这个数字不夸张，翻片时确实一直在找眼睛。</p>
+          </div>
+          <div class="voice">
+            <div class="who"><span class="avatar">周</span><span>周知远 · 摄影助理</span><span class="rate">★★★★★</span></div>
+            <p>四层目录结构比上一版好找太多。10 月 28 日灰砖墙那批 416 个文件，现在点两下就到 85mm 镜次，之前要翻五分钟。</p>
+          </div>
+          <div class="voice">
+            <div class="who"><span class="avatar">吴</span><span>吴迟 · 器材党</span><span class="rate">★★</span></div>
+            <p>固件 1.8.0 提缓存这件事被写进资讯有点勉强。148 张里本来就没撞到缓存上限，看不出差别。真要验证得连拍 300 张以上。</p>
+          </div>
+          <div class="voice">
+            <div class="who"><span class="avatar">沈</span><span>沈栖 · 同好</span><span class="rate">★★★★</span></div>
+            <p>对照面板那两栏对我最有用。以前总觉得 RAW 就是大，看完 1.3 档回拉和 400K 色温差的具体数字，才知道留 RAW 的钱花在哪。</p>
+          </div>
+          <div class="voice">
+            <div class="who"><span class="avatar">许</span><span>许言 · 授权对接</span><span class="rate">★★★</span></div>
+            <p>11 月 3 日那份说明写得清楚，但 24 个月期限偏短。作品集展示一般要给到 36 个月，续签条款建议提前写进文件，不要等快到期再谈。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="section" id="related">
+        <div class="sec-head">
+          <span class="kicker">12</span>
+          <h2>相关推荐</h2>
+          <p>同一批文件的其他取用方向。</p>
+        </div>
+        <nav class="tag-index" aria-label="相关推荐标签">
+          <a href="/#picks">窗光人像 RAW 素材包</a>
+          <a href="/#analysis">85mm 中景焦段选片笔记</a>
+          <a href="/#guide">白平衡偏移校正流程</a>
+          <a href="/#guide">低机位坐姿构图参考</a>
+          <a href="/#latest">连拍失焦对照组样本</a>
+          <a href="/#faq">二次使用授权范围说明</a>
+          <a href="/#ranking">场景入册率统计表</a>
+          <a href="/#timeline">拍摄与归档时间线</a>
+          <a href="/#news">Camera Raw 降噪版本差异</a>
+        </nav>
+      </section>
+
+      <!-- 补充板块：可信度分层 -->
+      <section class="section" id="credibility">
+        <div class="sec-head">
+          <span class="kicker">13</span>
+          <h2>信息可信度分层</h2>
+          <p>把事实、回应、转述、推测分开摆，方便核对。</p>
+        </div>
+        <div class="grid-3">
+          <div class="card" style="border-top:4px solid var(--teal)">
+            <h3>事实（有文件与日志可查）</h3>
+            <p>10-28 灰砖墙 416 张、11-01 窗光 192 张与夜街 96 张；成片 36 张；删除 27 张失焦帧并留 3 张样本；授权说明签署日 2026-11-03。</p>
+            <span class="meta">来源：拍摄日志、delete-log、授权文件</span>
+          </div>
+          <div class="card" style="border-top:4px solid var(--brass)">
+            <h3>回应与转述（有出处，未独立验证）</h3>
+            <p>修图师称 17.1 版本降噪后锐度下降约 8%，该数字为目测估计，未做客观分辨率测试；助理称新目录节省约五分钟检索时间，为单次操作感受。</p>
+            <span class="meta">来源：选片会口头记录 11-04</span>
+          </div>
+          <div class="card" style="border-top:4px solid var(--warn)">
+            <h3>推测（无直接证据）</h3>
+            <p>若把 35mm 固定机位拍满 100 张，命中率差距会缩到 10 个百分点以内；933 个非保留文件在 12 个月后可清理。两条都是基于现有样本的推断，尚无第二场同类拍摄验证。</p>
+            <span class="meta">来源：深度解析中的假设性判断</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-foot" id="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#3a4652"/>
+            <circle cx="25" cy="27" r="11" fill="none" stroke="#e8b86d" stroke-width="3"/>
+            <circle cx="25" cy="27" r="3.6" fill="#e8b86d"/>
+            <path d="M39 19l13 22H26" fill="none" stroke="#f2ede4" stroke-width="3" stroke-linejoin="round"/>
+          </svg>
+          <span>周妍希写真原始摄影素材</span>
+        </div>
+        <p style="color:#a9b6c2;margin-bottom:var(--sp-2)">按拍摄条件拆分的原始文件目录，服务选片、后期与归档核对。</p>
+        <p class="small" style="color:#93a1ae">页面所列文件数、参数与日期均可对照拍摄日志复核。</p>
+      </div>
+      <div>
+        <h3>素材入口</h3>
+        <ul>
+          <li><a href="/#picks">灰砖墙侧逆光组</a></li>
+          <li><a href="/#picks">咖啡馆窗光低位组</a></li>
+          <li><a href="/#picks">夜街霓虹混光组</a></li>
+          <li><a href="/#channels">全部分类标签</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>流程与规则</h3>
+        <ul>
+          <li><a href="/#guide">选片五步流程</a></li>
+          <li><a href="/#analysis">拍摄参数对比</a></li>
+          <li><a href="/#faq">授权范围说明</a></li>
+          <li><a href="/#credibility">可信度分层</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>更新与互动</h3>
+        <ul>
+          <li><a href="/#latest">文件变动记录</a></li>
+          <li><a href="/#voices">选片会反馈</a></li>
+          <li><a href="/#news">器材与后期动态</a></li>
+          <li><a href="/#timeline">归档时间线</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <p>示例数据说明：页面中的文件数量、镜头参数、入册率与评论均为带领域特征的示例内容，用于展示归档与选片方法，不代表真实拍摄记录。外部未提供可验证的授权与联系方式，相关条款仅作示例呈现。</p>
+      <p>页面更新时间 2026-11-06，对应正文「最新更新」中的目录拆分与参数表补录两项。© 2026 周妍希写真原始摄影素材归档计划</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var topNav = document.getElementById('topNav');
+  if(menuBtn && topNav){
+    menuBtn.addEventListener('click', function(){
+      var open = topNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    topNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.matchMedia('(max-width:980px)').matches){
+        topNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('q');
+  var box = document.getElementById('searchResult');
+  var out = document.getElementById('searchOut');
+  var index = [
+    {t:'灰砖墙侧逆光组', d:'10-28 外景，148 张 RAW，85mm，入册 9 张', h:'/#picks'},
+    {t:'咖啡馆窗光低位组', d:'11-01 内景，192 张 RAW，35mm 与 85mm，入册 11 张', h:'/#picks'},
+    {t:'夜街霓虹混光组', d:'11-01 夜间，96 张 RAW，ISO 1600，入册 5 张', h:'/#picks'},
+    {t:'选片五步流程', d:'从建目录到写入选理由，附用时记录', h:'/#guide'},
+    {t:'拍摄参数对比表', d:'三组场景的文件数、焦段、光圈、焦点落眼率', h:'/#analysis'},
+    {t:'白平衡偏移校正', d:'夜街组色温修正方法，RAW 无损调整范围', h:'/#faq'},
+    {t:'授权范围说明', d:'11-03 签署，个人作品集使用，24 个月', h:'/#faq'},
+    {t:'连拍失焦对照组', d:'删除 27 张后保留的 3 张样本', h:'/#latest'},
+    {t:'场景入册率排行', d:'按入册张数除以场景文件数统计', h:'/#ranking'},
+    {t:'归档时间线', d:'10-28 至 11-06 的拍摄与整理节点', h:'/#timeline'},
+    {t:'可信度分层', d:'事实、回应、推测三类信息分开呈现', h:'/#credibility'},
+    {t:'Camera Raw 17.1 降噪', d:'版本差异与锐度补偿记录', h:'/#news'}
+  ];
+
+  function render(kw){
+    kw = kw.trim().toLowerCase();
+    if(!kw){
+      box.classList.remove('open');
+      out.innerHTML = '';
+      return;
+    }
+    var hits = index.filter(function(item){
+      return item.t.toLowerCase().indexOf(kw) > -1 || item.d.toLowerCase().indexOf(kw) > -1;
+    });
+    box.classList.add('open');
+    if(!hits.length){
+      out.innerHTML = '<p style="margin:4px 0;color:#8c3d2f">没有找到与「' + escapeHtml(kw) + '」匹配的素材或栏目。试试“窗光”“85mm”“授权”“时间线”等关键词。</p>';
+      return;
+    }
+    var html = '<p style="margin:4px 0;color:#6b7785">找到 ' + hits.length + ' 条结果：</p><ul>';
+    hits.forEach(function(item){
+      html += '<li><a href="' + item.h + '">' + item.t + '</a> — ' + item.d + '</li>';
+    });
+    html += '</ul>';
+    out.innerHTML = html;
+  }
+
+  function escapeHtml(s){
+    return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    render(input.value);
+  });
+  input.addEventListener('input', function(){
+    if(input.value.trim() === ''){ render(''); }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "周妍希写真原始摄影素材",
+  "description": "按拍摄日期、机位与光比归档的原始摄影文件目录，含镜头参数、选片标准与后期流程说明。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "RAW 文件和直出 JPG 在本次归档里怎么对应？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "文件名主体一致，RAW 用 .CR3 后缀，JPG 用 .JPG 后缀，同名前缀可直接配对。213 张 JPG 中有 11 张没有对应 RAW，是试拍时误设为仅 JPEG 的帧，已在目录里单独标注。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "85mm 和 35mm 的选片率差这么多，是镜头问题吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "镜头不是主因。85mm 用在固定机位外景，人物在焦平面附近走动，命中率高；35mm 用在换场景频繁的咖啡馆，前 20 张对焦习惯没建立，废片集中。若 35mm 也放在固定机位拍满 100 张，命中率差距会缩小到 10 个百分点以内。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "夜间霓虹组为什么焦点落眼率只有 34%？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "暗部对比度低，相机自动对焦在人脸与背景光斑之间反复搜索，96 张中有 63 张焦点落在背景。补救办法是用单点对焦加眼部识别锁定，或把补光从 1/8 输出提高到 1/4。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "白平衡在 RAW 里能改到什么程度？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "色温可在 2000K 至 10000K 之间无损调整，色调可调 ±150。夜街混光场景左脸颊偏青约 400K、右侧偏橙约 600K，整张调平后仍有轻微色带，只能靠局部蒙版修正，本次用了两个径向蒙版。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "这 36 张成片能用于商业发布吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "不能直接商用。11 月 3 日的授权说明限定为个人作品集展示，期限 24 个月，商用与二次分发需另行书面确认。宣传物料、品牌合作、付费图库上传均不在当前范围内。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "删除的 27 张失焦帧还能找回吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "原始文件已删除，但保留了 3 张对照样本和删除前的文件名清单，清单存放在归档根目录的 delete-log 文本文件中，可据此复核删除范围是否合理。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "后续要拍同款窗光，最低要什么器材条件？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "一支 35mm f/1.8 以上光圈的定焦加一块 60cm 白色反光板即可。窗光是唯一主光源，色温约 5300K，ISO 控制在 640 以内，1/250 秒能冻结日常动作。"
+      }
+    }
+  ]
+}
+</script>
+</body>
+  </html>
